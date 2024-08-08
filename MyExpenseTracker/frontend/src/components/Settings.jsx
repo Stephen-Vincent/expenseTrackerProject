@@ -3,39 +3,40 @@ import Button from './Button';
 import avatar from '../assets/avatar.png';
 
 const Settings = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e) => {-
     e.preventDefault();
     // Add form submission logic here
   };
 
   return (
     <div className="flex h-fit w-full items-stretch gap-x-4">
-      <aside className="w-[20%] flex flex-col items-center h-full border-r-2 border-primary">
+       <aside className="w-[20%] flex flex-col items-center h-full border-r-2 border-primary">
 
-        {/* User image and greeting */}
-        <div className="flex flex-col items-center my-12">
-          <img src={avatar} alt="avatar" className="mb-4" />
-          <h2 className="text-center text-xl font-bold text-primary">Hi, Username</h2>
-        </div>
+      {/* User image and greeting */}
+      <div className="flex flex-col items-center my-12">
+        <img src={avatar} alt="avatar" className="mb-4" />
+        <h2 className="text-center text-xl font-bold text-primary">Hi, Username</h2>
+      </div>
 
-        <div className='flex-1'>
-          <ul className="space-y-4 h-[70%] flex flex-col items-center justify-evenly text-primary">
-            <li className="list-item cursor-pointer text-center">
-              <a href="/dashboard">Home</a>
-            </li>
-            <li className="list-item cursor-pointer text-center">
-              <a href="/settings">Settings</a>
-            </li>
-            <li className="list-item cursor-pointer text-center">
-              <a href="/" onClick={() => alert('Logging out...')}>Logout</a>
-            </li>
-          </ul>
-        </div>
+      <div className='flex-1'>
+        <ul className="space-y-4 h-[70%] flex flex-col items-center justify-evenly text-primary">
+          <li className="list-item cursor-pointer text-center">
+            <a href="/dashboard">Home</a>
+          </li>
+          <li className="list-item cursor-pointer text-center">
+            <a href="/settings">Settings</a>
+          </li>
+          <li className="list-item cursor-pointer text-center">
+            <a href="/" onClick={() => alert('Logging out...')}>Logout</a>
+          </li>
+        </ul>
+      </div>
       </aside>
       <section className="flex-1 h-full">
-        <div className='w-[80%] md:w-[50%] mx-auto -mt-8'>
+        <div className='w-[80%] md:w-[90%] mx-auto -mt-8'>
           <h2 className="text-4xl font-black tracking-tighter mb-4 text-left text-primary">Settings</h2>
-          
+          </div>
+          <div className='w-[80%] md:w-[50%] mx-auto -mt-8'>
           {/* Change Photo Section */}
           <div className='flex flex-col items-center mb-6'>
             <img src={avatar} alt="Profile Avatar" className='w-24 h-24 rounded-full mb-4' />
